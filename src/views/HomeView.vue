@@ -1,13 +1,21 @@
 <template>
     <div>
-      <h1>Welcome to the Adventurers Battle Game!</h1>
-      <router-link to="/class-selection">Start</router-link>
+      <h1>Welcome to Adventurers Battle game!</h1>
+      <ClassSelection />
     </div>
   </template>
   
   <script>
+  import ClassSelection from '@/components/ClassSelection.vue';
+  
   export default {
-    name: 'HomeView'
+    components: {
+      ClassSelection
+    }
   }
   </script>
+  
+  <style scoped>
+  /* Add your styles here if needed */
+  </style>
   

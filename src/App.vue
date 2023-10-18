@@ -1,20 +1,32 @@
 <template>
   <div id="app">
-    <h1>Welcome to the Adventurers Battle Game!</h1>
+    <HomeView />
   </div>
 </template>
 
 <script>
+import HomeView from '@/views/HomeView.vue';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HomeView
+  }
 }
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.image-container {
+  cursor: pointer;
+}
 </style>
+
